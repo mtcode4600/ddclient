@@ -37,7 +37,7 @@ RUN apt -y autoremove
 RUN apt clean
 RUN apt-get autoremove --yes
 ## Yes this will most likely make APT brake but thats why I update this frequently. (once every 3 months so expect 4 a yr Jan. Apr. July & Oct unless Security Issues Arise)
-## I suggest using Docker-Compose to run this setup so that you can maintain better version controls. Versions will be named wm3docker/ddclient:year-##
+## I suggest using Docker-Compose to run this setup so that you can maintain better version controls. Versions will be named mtdocker4600/ddclient:year-##
 RUN rm -rf /var/lib/{apt,dpkg,cache,log}/
 ## Lets get the party started
 CMD /home/scripts/entrypoint.sh
